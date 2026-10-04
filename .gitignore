@@ -1,0 +1,10 @@
+   # private data - never commit
+   dashboard/data/
+   *.xlsx
+   *.csv
+
+   # python
+   __pycache__/
+   *.pyc
+   .venv/
+   .env
