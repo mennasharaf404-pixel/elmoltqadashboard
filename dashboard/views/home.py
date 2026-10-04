@@ -13,8 +13,9 @@ TEXT_MUTED = "#4A6580"
 
 
 @st.cache_data
-def logo_b64() -> str:
-    return base64.b64encode(Path("assets/logo.jpg").read_bytes()).decode()
+def logo_b64():
+    logo = Path(__file__).resolve().parent.parent / "assets" / "logo.jpg"
+    return base64.b64encode(logo.read_bytes()).decode()
 
 
 st.markdown(
