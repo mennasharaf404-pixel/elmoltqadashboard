@@ -1,14 +1,18 @@
+from pathlib import Path
+
 import streamlit as st
 from theme import inject_css, DEPARTMENTS
 
+LOGO = str(Path(__file__).parent / "assets" / "logo.jpg")
+
 st.set_page_config(
     page_title="ELMOLTQA Developments | Dashboard",
-    page_icon="assets/logo.jpg",
+    page_icon=LOGO,
     layout="wide",
     initial_sidebar_state="expanded",
 )
 inject_css()
-st.logo("assets/logo.jpg", size="large")
+st.logo(LOGO, size="large")
 
 home = st.Page("views/home.py", title="Home", icon=":material/home:", default=True)
 operations = st.Page("views/operations.py", title="Operations", icon=DEPARTMENTS["Operations"]["icon"])
