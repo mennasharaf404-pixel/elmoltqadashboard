@@ -1,13 +1,8 @@
-"""ELMOLTQA Developments dashboard - entry point.
-
-Run from the `dashboard/` folder:  streamlit run app.py
-"""
 from pathlib import Path
 
 import streamlit as st
 from theme import inject_css, DEPARTMENTS
 
-# Resolve assets from this file's location so it works locally and on Streamlit Cloud.
 BASE_DIR = Path(__file__).resolve().parent
 LOGO = str(BASE_DIR / "assets" / "logo.jpg")
 
