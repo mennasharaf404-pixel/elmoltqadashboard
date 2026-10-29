@@ -23,14 +23,13 @@ st.logo(LOGO, size="large")
 home = st.Page("views/home.py", title="Home", icon=":material/home:", default=True)
 operations = st.Page("views/operations.py", title="Operations", icon=DEPARTMENTS["Operations"]["icon"])
 customer_service = st.Page("views/customer_service.py", title="Customer Service", icon=DEPARTMENTS["Customer Service"]["icon"])
-financial = st.Page("views/financial.py", title="Financial", icon=DEPARTMENTS["Financial"]["icon"])
 marketing = st.Page("views/marketing.py", title="Marketing", icon=DEPARTMENTS["Marketing"]["icon"])
 hr = st.Page("views/hr.py", title="HR", icon=DEPARTMENTS["HR"]["icon"])
 
 pg = st.navigation(
     {
         "Overview": [home],
-        "Departments": [operations, customer_service, financial, marketing, hr],
+        "Departments": [operations, customer_service, marketing, hr],
     }
 )
 pg.run()

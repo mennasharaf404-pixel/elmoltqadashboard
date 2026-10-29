@@ -126,7 +126,6 @@ st.markdown(
 CARDS = [
     ("Operations", "views/operations.py"),
     ("Customer Service", "views/customer_service.py"),
-    ("Financial", "views/financial.py"),
     ("Marketing", "views/marketing.py"),
     ("HR", "views/hr.py"),
 ]
